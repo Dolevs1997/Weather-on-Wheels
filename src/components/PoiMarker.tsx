@@ -7,7 +7,7 @@ interface Coord {
 }
 type Place = { country: string; cityName: string; coord: Coord };
 
-const PoiMarkers = ({ places }) => {
+const PoiMarkers = (props: { places: Place[] }) => {
   const map = useMap();
   const [markers, setMarkers] = useState<{ [key: string]: Marker }>({});
   const clusterer = useRef<MarkerClusterer | null>(null);
