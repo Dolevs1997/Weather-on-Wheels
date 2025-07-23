@@ -42,7 +42,7 @@ const CreatePlace = () => {
         </button>
       </form>
       {isLoading && <Spinner animation="border" variant="success" />}
-      <APIProvider apiKey="AIzaSyANXr7BBMw3Nb8zOiPYZB__Iehzo5Wd2EY">
+      <APIProvider apiKey="">
         <MapComponent />
       </APIProvider>
     </div>
